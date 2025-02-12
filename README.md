@@ -58,6 +58,9 @@ Optionally you can pick your own voice. Consult the comments of `joi_clean.py` f
 
 That's it! You can run `joi_clean.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
 
+### Variants
+
+If you would prefer to use the DIRT CHEAP MistralAI API instead of the OpenAI API, download and run the `joi_clean_mistral.py
 ### Customization
 
 Further instructions for customization are in the comment sections of `joi_clean.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
