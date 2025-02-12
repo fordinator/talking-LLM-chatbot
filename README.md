@@ -41,8 +41,6 @@ You can create API keys for ElevenLabs at https://elevenlabs.io/app/settings/api
 
 Next you need to open `joi_clean.py` with a text editor (Notepad++ is good because its easier to read) and add these keys to the correct locations. You will NEED TO READ the instructions inside the code.
 
-That's it! You can run `joi_clean.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
-
 ### Adding Eastend Steve
 
 One final step. You need to add a voice to your ElevenLabs Library or you WILL RECEIVE AN ERROR when you try to run this code. Here are extremely detailed instructions on how to do so.
@@ -55,6 +53,8 @@ One final step. You need to add a voice to your ElevenLabs Library or you WILL R
 - Click "Add To My Voices"
 
 Optionally you can pick your own voice. Consult the comments of `joi_clean.py` for details.
+
+That's it! You can run `joi_clean.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
 
 ### Customization
 
