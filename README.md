@@ -23,8 +23,8 @@ Instructions only available for Windows currently because that's my native platf
 - Type the following commands in order.
 
 1. `git clone https://github.com/fordinator/joi`
-2. `pip install os time whisper threading numpy sounddevice elevenlabs openai rich queue`
-3. `cd joi`
+2. `cd joi`
+3. `pip install os time whisper threading numpy sounddevice elevenlabs openai rich queue`
 4. `python joi_clean.py`
 
 ### Adding your API Keys
