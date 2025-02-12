@@ -36,8 +36,8 @@ ELEVENLABS_VOICE_ID = "1TE7ou3jyxHsyRehUuMB"
 # keys here.                                                                                                                                      #
 ###################################################################################################################################################
 
-MISTRAL_API_KEY = "Y4YS8JhckkwkwMI42tjdORVG4ratUJN3"
-ELEVENLABS_API_KEY = "sk_8f0ea33ac92f061dd4bfaa4aa427d73c56c7ed636ee9fe8d"
+MISTRAL_API_KEY = ""
+ELEVENLABS_API_KEY = ""
 
 ###################################################################################################################################################
 # OPTIONAL VARIABLES: It is recommended to leave these alone but you can change them if you really want to tweak them. Brief descriptions of      #
