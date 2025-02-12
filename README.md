@@ -43,6 +43,19 @@ Next you need to open `joi_clean.py` with a text editor (Notepad++ is good becau
 
 That's it! You can run `joi_clean.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
 
+### Adding Eastend Steve
+
+One final step. You need to add a voice to your ElevenLabs Library or you WILL RECEIVE AN ERROR when you try to run this code. Here are extremely detailed instructions on how to do so.
+
+- From https://elevenlabs.io/, sign in and click "Go To App" in the upper right.
+- Click `Voices+` in the left menu.
+- Click `Community` along the middle.
+- Search for "Eastend Steve"
+- Click `View` on "Eastend Steve"
+- Click "Add To My Voices"
+
+Optionally you can pick your own voice. Consult the comments of `joi_clean.py` for details.
+
 ### Customization
 
 Further instructions for customization are in the comment sections of `joi_clean.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
