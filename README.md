@@ -47,6 +47,10 @@ Please none that due to the publicly available nature of OpenAI and ElevenLabs, 
 
 Watch this space!
 
+### Support
+
+Support is not guaranteed but submitting a Github issue is preferred. I keep a currently empty Discord at https://discord.gg/gAugxKBHQY if you want to stop by and shoot the shit. I am known as "\_.vexation.\_"
+
 
 
 
