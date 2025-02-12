@@ -33,7 +33,7 @@ This code WILL NOT WORK without a PAID SUBSCRIPTION to BOTH ChatGPT's API and El
 
 You can get a ChatGPT API subscription from https://platform.api.com. (I trust you know how to subscribe to things.) The way it works is you add a credit card and a small pre-payment ($10 is probably plenty) and OpenAI will deduct money from your balance every few messages you sent. Currently, the joi code is programmed to require about 3 cents per request.
 
-You can get an Elevenlabs subscription from https://elevenlabs.io/pricing. The free account is okay for trying out joi but you will quickly run out of credits and will be forced to subscribe. Currently this code is very expensive on credits although I am researching ways to reduce that cost. The estimate is about 5 cents per request currently.
+You can get an ElevenLabs subscription from https://elevenlabs.io/pricing. The free account is okay for trying out joi but you will quickly run out of credits and will be forced to subscribe. Currently this code is very expensive on credits although I am researching ways to reduce that cost. The estimate is about 5 cents per request currently.
 
 Once you have your subscriptions, you can create API keys for OpenAI at https://platform.openai.com/api-keys. Generate a code, give it a name (doesn't matter what it is) and once you have it SAVE IT SOMEWHERE so you don't forget it.
 
