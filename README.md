@@ -1,7 +1,7 @@
 # joi
 Create your own talking chatbot. API infused from OpenAI and ElevenLabs and highly customizable.
 
-(Inspired and heavily derived from both https://github.com/vndee/local-talking-llm and https://github.com/jakobdylanc/llmcord, as well as ChatGPT's own advice)
+(Inspired and heavily derived from both https://github.com/vndee/local-talking-llm and https://github.com/jakobdylanc/llmcord)
 
 ### Preamble
 So I've used all the major online LLMs out there. I've tried setting up my local models. But I thought to myself, why hasn't anybody made one of these talk to me like Gemini can do? So I decided to do it myself.
