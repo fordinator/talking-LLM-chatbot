@@ -7,7 +7,7 @@ So I've used all the major online LLMs out there. I've tried setting up my local
 ### Warning
 This code simply makes calls to the OpenAI and ElevenLabs APIs for AI and speech generation, NEITHER OF WHICH ARE FREE. You will need BOTH a subscription to OpenAI and ElevenLabs API to use this code.
 
-## Prerequisites
+### Prerequisites
 
 You will need a microphone to interact with joi. You talk to her and she talks to you. Most laptops have one included and preconfigured but desktop users will probably have to buy one. A clip mic or a gaming headset will work in a pinch.
 
