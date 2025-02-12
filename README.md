@@ -66,6 +66,12 @@ Oh, you will need to do `pip install mistralai` inside the joi directory in addi
 
 And of course, READ THE COMMENTS of `joi_clean_mistral.py` to input the proper MistralAI API key.
 
+For an ABSOLUTE BARGAIN BASEMENT option, you can use MistralAI with PlayHT. This one is not very smart and the voices are more robotic, but it's an option if your budget is really constrained and you want to talk to the bot for a long time. Download the `joi_clean_mistral_playht.py` file and run it same as usual.
+
+You will need to do the `pip install mistralai` as above, along with `pip install io select wave.`
+
+And don't forget to read the comments!
+
 ### Customization
 
 Further instructions for customization are in the comment sections of `joi_clean.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
