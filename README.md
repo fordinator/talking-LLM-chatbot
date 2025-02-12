@@ -94,7 +94,7 @@ Just delete the joi folder and uninstall Git for Windows and Python for Windows,
 
 This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't give a fuck. If you could drop me a dollar at https://patreon.com/cacophony1979 it would go a long way to encouraging me to continue with projects like this. 
 
-Future plans include implementing Llama, Groq, Mistral and other LLMs along with an endless number of local models for roleplaying scenarios but that takes time, and time is money.
+Future plans include implementing Llama, Groq, and other LLMs along with an endless number of local models for roleplaying scenarios but that takes time, and time is money.
 
 ### Final CODA
 
