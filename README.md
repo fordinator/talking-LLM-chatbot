@@ -66,7 +66,7 @@ Consult the comments of `joi_clean.py` for further details. YOU WILL NEED TO REA
 
 Please none that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. 
 
-However I keep a `joi_dirty.py` script on my Discord that you can use to bypass some of these restrictions. You'll just have to join and ask me for it.
+However I keep a `joi_dirty.py` script on my Discord that you can use to bypass some of these restrictions. You'll just have to join and ask me for it. It is... a bit more complicated to set up.
 
 ### Support
 
