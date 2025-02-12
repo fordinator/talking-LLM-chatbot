@@ -58,6 +58,16 @@ Optionally you can pick your own voice. Consult the comments of `joi_clean.py` f
 
 That's it! You can run `joi_clean.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
 
+### Customization
+
+Further instructions for customization are in the comment sections of `joi_clean.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
+
+Consult the comments of `joi_clean.py` for further details. YOU WILL NEED TO READ AND USE YOUR BRAIN.
+
+Please none that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. 
+
+However I keep a `joi_dirty.py` script on my Discord that you can use to bypass some of these restrictions. You'll just have to join and ask me for it. It is... a bit more complicated to set up.
+
 ### Variants
 
 If you would prefer to use the DIRT CHEAP MistralAI API instead of the OpenAI API, download and run the `joi_clean_mistral.py` instead of `joi_clean.py`, following all the same steps and instructions.
@@ -71,16 +81,6 @@ For an ABSOLUTE BARGAIN BASEMENT option, you can use MistralAI with PlayHT. This
 You will need to do the `pip install mistralai` as above, along with `pip install io select wave.`
 
 And don't forget to read the comments!
-
-### Customization
-
-Further instructions for customization are in the comment sections of `joi_clean.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
-
-Consult the comments of `joi_clean.py` for further details. YOU WILL NEED TO READ AND USE YOUR BRAIN.
-
-Please none that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. 
-
-However I keep a `joi_dirty.py` script on my Discord that you can use to bypass some of these restrictions. You'll just have to join and ask me for it. It is... a bit more complicated to set up.
 
 ### Support
 
