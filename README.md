@@ -64,9 +64,9 @@ Further instructions for customization are in the comment sections of `joi_clean
 
 Consult the comments of `joi_clean.py` for further details. YOU WILL NEED TO READ AND USE YOUR BRAIN.
 
-Please none that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. I am considering modifying this code using Ollama and langchain to get around that but I lack the experience presently.
+Please none that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. 
 
-Watch this space!
+However I keep a `joi_dirty.py` script on my Discord that you can use to bypass some of these restrictions. You'll just have to join and ask me for it.
 
 ### Support
 
@@ -78,7 +78,9 @@ Just delete the joi folder and uninstall Git for Windows and Python for Windows,
 
 ### Contributing
 
-This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't give a fuck. If you could drop me a dollar at https://patreon.com/cacophony1979 it would go a long way to encouraging me to continue with projects like this. I have plans to implement Mistral, Groq, and other LLMs along with an endless number of local models for roleplaying scenarios but that takes time, and time is money.
+This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't give a fuck. If you could drop me a dollar at https://patreon.com/cacophony1979 it would go a long way to encouraging me to continue with projects like this. 
+
+Future plans include implementing Llama, Groq, Mistral and other LLMs along with an endless number of local models for roleplaying scenarios but that takes time, and time is money.
 
 ### Final CODA
 
