@@ -1,4 +1,17 @@
 # joi - Configurable Voice Chatbot for the Masses
+
+```
+                                                          ,--.-,   _,.---._     .=-.-. 
+                                                         |==' -| ,-.' , -  `.  /==/_ / 
+                                                         |==|- |/==/_,  ,  - \|==|, |  
+                                                       __|==|, |==|   .=.     |==|  |  
+                                                    ,--.-'\=|- |==|_ : ;=:  - |==|- |  
+                                                    |==|- |=/ ,|==| , '='     |==| ,|                      
+                                                    |==|. /=| -|\==\ -    ,_ /|==|- |          
+                                                    \==\, `-' /  '.='. -   .' /==/. /  
+                                                    `--`----'     `--`--''   `--`-`  
+```
+
 Create your own talking chatbot. API infused from OpenAI and ElevenLabs and highly customizable.
 
 (Inspired and heavily derived from both https://github.com/vndee/local-talking-llm and https://github.com/jakobdylanc/llmcord)
