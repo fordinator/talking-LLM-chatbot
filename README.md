@@ -55,7 +55,7 @@ One final step. You need to add a voice to your ElevenLabs Library or you WILL R
 - Click `View` on "Vexation"
 - Click "Add To My Voices"
 
-Optionally you can pick your own voice. Consult the comments of `joi_clean.py` for details.
+Optionally you can pick your own voice. Consult the comments of `joi.py` for details.
 
 That's it! You can run `joi.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
 
