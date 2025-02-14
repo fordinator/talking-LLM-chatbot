@@ -26,8 +26,9 @@ Instructions only available for Windows currently because that's my native platf
 
 1. `git clone https://github.com/fordinator/joi`
 2. `cd joi`
-3. `pip install io re select sys os time whisper threading numpy sounddevice elevenlabs rich queue pyht openai mistralai typing langchain langgraph`
-4. `python joi_clean.py`
+3. `pip install io re select sys os time whisper threading numpy sounddevice`
+4. `pip install elevenlabs rich queue pyht openai mistralai typing langchain langgraph`
+5. `python joi.py`
 
 ### Adding your API Keys
 
