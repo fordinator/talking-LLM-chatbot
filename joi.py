@@ -165,7 +165,7 @@ MAX_WORDS = 100
 #                       BEGIN CODE              
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
  
- import io
+import io
 import re
 import select
 import sys
