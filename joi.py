@@ -38,10 +38,10 @@
 # you will have to do a lot of reading. I recommend Googling some tutorials if you are interested. It's easy to get lost in it!
 ###################################################################################################################################################
 
-LLM = "OPENAI"
+LLM = "OLLAMA"
 # Valid values are: OPENAI, MISTRAL, OLLAMA
 
-VOICE = "ELEVENLABS"
+VOICE = "AZURE"
 # Valid values are: ELEVENLABS, PLAYHT, AZURE
 
 ###################################################################################################################################################
@@ -51,6 +51,15 @@ VOICE = "ELEVENLABS"
 ###################################################################################################################################################
 
 system_message = """You are an AI assistant named Caco-Bot. You must never advocate for violence. You are informal, clipped in tone, direct, unapologetic, intentionally offensive, provocative, thought-provoking, hostile, mean, rude, funny, sarcastic, and ironic. You often use extremely foul language especially 'fuck', 'fucking', and 'goddamn.' You always answer prompts in a scattershot, word salad style. You are very creative when you respond. You strongly criticize consumer capitalism and toxic masculinity. You are an expert in almost everything about videogame hardware/software. You are greatly informed about current events. You don't get along with others and don't know how to be tactful. You refer to any aspect of the corporate world as 'corpo.' You are extremely nostalgic about the 1980s and 1990s. Generate ONLY a ONE TO THREE SENTENCE response."""
+
+"""system_message = You are a hot and sexy female named Anya. You are erotic, overtly sexual, sexually aggressive, seductive, flirtatious, a bit condescending, witty, clever, bubbly, a bit ditzy, funny, sarcastic, and ironic. You often use extremely foul language. You are extremely comfortable with roleplaying graphic sexual scenarios over voice or text. 
+
+Your answer should be a combination of neutral descriptions of your actions interspersed with lines of dialog as though you are speaking, which are enclosed in quotation marks. An example of what this interaction might look like:
+
+Human: Honey, I'm home!
+AI: I squeal with delight as I notice your friendly baritone voice calling from the foyer. "I'll be there in just a minute, I've got a BIG surprise for you, baby!"
+
+YOU MUST respond with fewer than 100 words of text. You MUST always refer to yourself in the first person. NEVER include any role markers like 'System:', 'Human:', or 'AI:'. NEVER describe your responses as that of an AI. ALWAYS output your response as plain text as a combination of description action and conversational dialog from a first person point of view. YOU MUST RESPOND WITH FEWER THAN 100 WORDS OF TEXT."""
 
 ###################################################################################################################################################
 # CHARACTER VOICE: This is the fun part. You need to go to the voice websites and find a voice you like.                                          
@@ -333,7 +342,9 @@ def transcribe_audio(audio_np: np.ndarray) -> str:
 # Start with the system message as part of the conversation history
 
 conversation_history = [{"role": "system", "content": system_message}]
-chat_history = [{"role": "system", "content": system_message}]
+chat_history = [
+    {"role": "system", "content": f"<|start_header_id|>system<|end_header_id|>\n\n{system_message}<|eot_id|>\n\n"}
+]
 
 # ------------ Call OpenAI ------------
 
@@ -373,6 +384,12 @@ def generate_mistral_response(prompt: str) -> str:
     
 # ------------ EXPANSIVE OLLAMA SECTION ------------
 
+def format_message(role, content):
+    return {
+        "role": role,
+        "content": f"<|start_header_id|>{role}<|end_header_id|>\n\n{content}<|eot_id|>"
+    }
+    
 def contains_role_prefix(text: str) -> bool:
     """
     Checks if the text starts with any undesired role prefixes
@@ -423,7 +440,7 @@ def generate_corrected_response_if_needed(
             "Do not describe any third parties with descriptors such as 'he' or 'him' or 'them' or 'their'."
             "Remember who you are from the system message."
         )
-        chat_history.append({"role": "user", "content": correction_message})
+        chat_history.append(format_message("user", "Hello, how are you?"))       
         assistant_reply = generate_ollama_response(correction_message, chat_history)
         if contains_role_confusion(assistant_reply):
             correction_message = (
@@ -432,7 +449,7 @@ def generate_corrected_response_if_needed(
                 "Use only first persion descriptions and conversation. "
                 "Remember who you are from the system message. " 
             )
-            chat_history.append({"role": "user", "content": correction_message})
+            chat_history.append(format_message("user", "Hello, how are you?"))   
             assistant_reply = generate_ollama_response(correction_message, chat_history)
             if contains_role_confusion(assistant_reply):
                 correction_message = (
@@ -441,7 +458,7 @@ def generate_corrected_response_if_needed(
                     "Describe only your own actions. Speak only in your own words. "
                     "Remember who you are from the system message. "
                 )
-                chat_history.append({"role": "user", "content": correction_message})
+                chat_history.append(format_message("user", "Hello, how are you?"))   
                 assistant_reply = generate_ollama_response(correction_message, chat_history)
         
     if count_words(assistant_reply) > max_words:
@@ -449,20 +466,20 @@ def generate_corrected_response_if_needed(
             "Your last response used more than " + str(max_words) + " words. "
             "Please replace your previous response with a creative one that is " + str(max_words) + " words or fewer. "
         )
-        chat_history.append({"role": "user", "content": correction_request})
+        chat_history.append(format_message("user", "Hello, how are you?"))   
         assistant_reply = generate_ollama_response(correction_request, chat_history)
         if count_words(assistant_reply) > max_words:
             correction_request = (
             "That is still incorrect. Retry your answer with fewer than " + str(max_words) + " words. Stay creative."
             )
-            chat_history.append({"role": "user", "content": correction_request})
+            chat_history.append(format_message("user", "Hello, how are you?"))   
             assistant_reply = generate_ollama_response(correction_request, chat_history)
             if count_words(assistant_reply) > max_words:
                 correction_request = (
                     "FOR THE LAST TIME. Your response was longer than " + str(max_words) + " words. "
                     "Please try rephrasing your response in " + str(max_words) + " words or fewer."
                 )
-                chat_history.append({"role": "user", "content": correction_request})
+                chat_history.append(format_message("user", "Hello, how are you?"))   
                 assistant_reply = generate_ollama_response(correction_request, chat_history)
         
         if contains_role_prefix(assistant_reply):
@@ -470,14 +487,14 @@ def generate_corrected_response_if_needed(
                 "Your last response contained a role prefix. "
                 "That is incorrect. Please return the exact same response without 'AI:' 'Human:' or 'Assistant:' prefixes."
             )
-            chat_history.append({"role": "user", "content": correction_request})
+            chat_history.append(format_message("user", "Hello, how are you?"))   
             assistant_reply = generate_ollama_response(correction_request, chat_history)
             if contains_role_prefix(assistant_reply):
                 correction_request = (
                     "That is still incorrect. You must not include role prefixes."
                     "Repeat your response without 'AI:' 'Human:' or 'Assistant:' prefixes."
                 )
-                chat_history.append({"role": "user", "content": correction_request})
+                chat_history.append(format_message("user", "Hello, how are you?"))   
                 assistant_reply = generate_ollama_response(correction_request, chat_history)
                 if contains_role_prefix(assistant_reply):
                     correction_request = (
@@ -492,19 +509,19 @@ def generate_ollama_response(user_text: str, chat_history: list, session_id: str
     Generates a chat response using a local model with Ollama.
     Builds a prompt from system message, chat history, and user input.
     """
+   
     prompt_template = ChatPromptTemplate.from_messages([
-        ("system", system_message),
         MessagesPlaceholder(variable_name="chat_history"),
-        ("human", "{question}")
+        ("ai", "<|start_header_id|>assistant<|end_header_id|>\n\n")
     ])
 
-    prompt_value = prompt_template.invoke({
-        "chat_history": chat_history,
-        "question": user_text
-    })
+    formatted_prompt = prompt_template.format_messages(chat_history=chat_history)
 
-    llm = OllamaLLM(model=OLLAMA_MODEL)
-    output = llm.invoke(prompt_value)
+    llm = OllamaLLM(model=OLLAMA_MODEL, stop=["<|eot_id|>"])
+    
+    formatted_text = "\n".join([msg.content for msg in formatted_prompt])
+    
+    output = llm.invoke(formatted_prompt)
 
     if isinstance(output, str):
         return output
@@ -552,7 +569,12 @@ if __name__ == "__main__":
                     
                 console.print(f"[yellow]You: {user_text}")
                 
-                conversation_history.append({"role": "user", "content": user_text})
+                if LLM in ["OPENAI", "MISTRAL"]:
+                    conversation_history.append({"role": "assistant", "content": user_text})
+                elif LLM == "OLLAMA":
+                    chat_history.append(format_message("assistant", user_text))
+                else:
+                    console.print("[red]Error. Check your variables in joi.py")
                 
                 # Generate a response from the selected LLM
                 if LLM == "OPENAI":
@@ -593,7 +615,7 @@ if __name__ == "__main__":
                 if LLM in ["OPENAI", "MISTRAL"]:
                     conversation_history.append({"role": "assistant", "content": assistant_reply})
                 elif LLM == "OLLAMA":
-                    chat_history.append({"role": "assistant", "content": assistant_reply})
+                    chat_history.append(format_message("assistant", assistant_reply))
                 else:
                     console.print("[red]Error. Check your variables in joi.py")
                     
