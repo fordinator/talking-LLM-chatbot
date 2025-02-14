@@ -42,7 +42,7 @@ Once you have your subscriptions, you can create API keys for OpenAI at https://
 
 You can create API keys for ElevenLabs at https://elevenlabs.io/app/settings/api-keys. Generate a code, use the default name, and once you have it SAVE IT SOMEWHERE so you don't forget it.
 
-Next you need to open `joi_clean.py` with a text editor (Notepad++ is good because its easier to read) and add these keys to the correct locations. You will NEED TO READ the instructions inside the code.
+Next you need to open `joi.py` with a text editor (Notepad++ is good because its easier to read) and add these keys to the correct locations. You will NEED TO READ the instructions inside the code.
 
 ### Adding Vexation
 
