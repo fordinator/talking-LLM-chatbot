@@ -43,44 +43,30 @@ You can create API keys for ElevenLabs at https://elevenlabs.io/app/settings/api
 
 Next you need to open `joi_clean.py` with a text editor (Notepad++ is good because its easier to read) and add these keys to the correct locations. You will NEED TO READ the instructions inside the code.
 
-### Adding Eastend Steve
+### Adding Vexation
 
 One final step. You need to add a voice to your ElevenLabs Library or you WILL RECEIVE AN ERROR when you try to run this code. Here are extremely detailed instructions on how to do so.
 
 - From https://elevenlabs.io/, sign in and click "Go To App" in the upper right.
 - Click `Voices+` in the left menu.
 - Click `Community` along the middle.
-- Search for "Eastend Steve"
-- Click `View` on "Eastend Steve"
+- Search for "Vexation"
+- Click `View` on "Vexation"
 - Click "Add To My Voices"
 
 Optionally you can pick your own voice. Consult the comments of `joi_clean.py` for details.
 
-That's it! You can run `joi_clean.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
+That's it! You can run `joi.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
 
 ### Customization
 
-Further instructions for customization are in the comment sections of `joi_clean.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
+Further instructions for customization are in the comment sections of `joi.py`. You can give the bot a different System Prompt so it has a personality entirely of your own design. You can select from among the 3,000+ voices available in the ElevenLabs Voice Library to give it exactly the voice you prefer.
 
-Consult the comments of `joi_clean.py` for further details. YOU WILL NEED TO READ AND USE YOUR BRAIN.
+Consult the comments of `joi.py` for further details. YOU WILL NEED TO READ AND USE YOUR BRAIN.
 
-Please none that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. 
+Please note that due to the publicly available nature of OpenAI and ElevenLabs, usage of their services for illegal or sexual, violent or bigoted content is a violation of their terms of service and may result in legal action. 
 
-However I keep a `joi_dirty.py` script on my Discord that you can use to bypass some of these restrictions. You'll just have to join and ask me for it. It is... a bit more complicated to set up.
-
-### Variants
-
-If you would prefer to use the DIRT CHEAP MistralAI API instead of the OpenAI API, download and run the `joi_clean_mistral.py` instead of `joi_clean.py`, following all the same steps and instructions.
-
-Oh, you will need to do `pip install mistralai` inside the joi directory in addition to the other steps.
-
-And of course, READ THE COMMENTS of `joi_clean_mistral.py` to input the proper MistralAI API key.
-
-For an ABSOLUTE BARGAIN BASEMENT option, you can use MistralAI with PlayHT. This one is not very smart and the voices are more robotic, but it's an option if your budget is really constrained and you want to talk to the bot for a long time. Download the `joi_clean_mistral_playht.py` file and run it same as usual.
-
-You will need to do the `pip install mistralai` as above, along with `pip install io select wave.`
-
-And don't forget to read the comments!
+For that you will have to use a local model which is available in the code. But setting one up is your problem.
 
 ### Support
 
@@ -93,13 +79,6 @@ Just delete the joi folder and uninstall Git for Windows and Python for Windows,
 ### Contributing
 
 This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't give a fuck. If you could drop me a dollar at https://patreon.com/cacophony1979 it would go a long way to encouraging me to continue with projects like this. 
-
-Future plans include implementing Llama, Groq, and other LLMs along with an endless number of local models for roleplaying scenarios but that takes time, and time is money.
-
-### Final CODA
-
-Stay real you horny bastards.
-
 
 
 
