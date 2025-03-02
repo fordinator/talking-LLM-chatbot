@@ -84,7 +84,7 @@ For that you will have to use a local model which is available in the code. But 
 
 ### Support
 
-Support is not guaranteed but submitting a Github issue is preferred. I keep a currently empty Discord at https://discord.gg/gAugxKBHQY if you want to stop by and shoot the shit. I am known as "\_.vexation.\_"
+Support is not guaranteed but submitting a Github issue is preferred.
 
 ### Uninstallation
 
@@ -93,6 +93,14 @@ Just delete the joi folder and uninstall Git for Windows and Python for Windows,
 ### Contributing
 
 This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't give a fuck. If you could drop me a dollar at https://patreon.com/cacophony1979 it would go a long way to encouraging me to continue with projects like this. 
+
+### Licensing and Usage
+
+Steal it, take credit for it, change it, improve it, sell it, it's yours.
+
+If you want to bullshit with me, visit https://discord.com/invite/gAugxKBHQY.
+
+If you want to encourage other coding projects like this, donate to https://www.patreon.com/cacophony1979
 
 
 
