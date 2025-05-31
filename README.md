@@ -26,9 +26,11 @@ Recently an option has been provided to set up the local models Ollama for LLM a
 
 ### Prerequisites
 
-You will need a microphone to interact with joi. You talk to her and she talks to you. Most laptops have one included and preconfigured but desktop users will probably have to buy one. A clip mic or a gaming headset will work in a pinch.
+The BEST way to interact with joi is by microphone. You talk to her and she talks to you. Most laptops have one included and preconfigured but desktop users will probably have to buy one. A clip mic or a gaming headset will work in a pinch.
 
 Just MAKE SURE ITS PLUGGED IN and selected as your "DEFAULT INPUT DEVICE".
+
+As a fallback you can just type to her, but I find that less compelling.
 
 ### Installation
 
