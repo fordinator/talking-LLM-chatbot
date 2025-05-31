@@ -12,7 +12,7 @@
  `--`----'     `--`--''   `--`-`  
 ```
 
-Create your own talking chatbot. API infused from OpenAI and ElevenLabs and highly customizable.
+Create your own talking chatbot. Using APIs from multiple LLMs and text-to-speech services.
 
 (Inspired and heavily derived from both https://github.com/vndee/local-talking-llm and https://github.com/jakobdylanc/llmcord)
 
@@ -20,7 +20,9 @@ Create your own talking chatbot. API infused from OpenAI and ElevenLabs and high
 So I've used all the major online LLMs out there. I've tried setting up my local models. But I thought to myself, why hasn't anybody made one of these talk to me like Gemini can do? So I decided to do it myself.
 
 ### Warning
-This code simply makes calls to the OpenAI and ElevenLabs APIs for AI and speech generation, NEITHER OF WHICH ARE FREE. You will need BOTH a subscription to OpenAI and ElevenLabs API to use this code.
+This code simply makes calls to populal LLM and TTS APIs for AI and speech generation, NEITHER OF WHICH ARE FREE. You will need BOTH a subscription to an LLM API **AND** a TTS API to use this.
+
+Recently an option has been provided to set up the local models Ollama for LLM and Kokoro for TTS but that is outside the scope of this document.
 
 ### Prerequisites
 
@@ -35,21 +37,17 @@ Instructions only available for Windows currently because that's my native platf
 - Install Git for Windows from https://git-scm.com/downloads/win and use all the default options. Then restart your computer.
 - Install Python for Windows from https://www.python.org/downloads/ and use all the default options. Then restart your computer.
 - Open a terminal to a convenient location, I recommend your downloads directory. On Windows 11, you can go there and right click inside, then select "Open with Terminal."
-- Type the following commands in order.
-
-1. `git clone https://github.com/fordinator/joi`
-2. `cd joi`
-3. `pip install io re select sys os time whisper threading numpy sounddevice`
-4. `pip install elevenlabs rich queue pyht openai mistralai typing langchain langgraph`
-5. `python joi.py`
+- Type the following command: `pip install -r requirements.txt'
 
 ### Adding your API Keys
 
-This code WILL NOT WORK without a PAID SUBSCRIPTION to BOTH ChatGPT's API and ElevenLab's API.
+This code WILL NOT WORK without a PAID SUBSCRIPTION to BOTH an LLM API and a TTS API. For LLM you can choose OpenAI, Gemini, Anthropic, or Mistral. For TTS you can choose ElevenLabs, PlayHT, Google Voice, or Azure. If you are familiar with setting up local models (which are free and do not send any information to tech bros so they can fire up _SkyNet_) there are now options for Ollama for the LLM and Kokoro for the TTS.
 
-You can get a ChatGPT API subscription from https://platform.api.com. (I trust you know how to subscribe to things.) The way it works is you add a credit card and a small pre-payment ($10 is probably plenty) and OpenAI will deduct money from your balance every few messages you sent. Currently, the joi code is programmed to require about 3 cents per request.
+The default instructions assume the most advanced services: OpenAI and ElevenLabs. Additional instructions will not be documented, but you can always find me and ask me.
 
-You can get an ElevenLabs subscription from https://elevenlabs.io/pricing. The free account is okay for trying out joi but you will quickly run out of credits and will be forced to subscribe. Currently this code is very expensive on credits although I am researching ways to reduce that cost. The estimate is about 5 cents per request currently.
+You can get a ChatGPT API subscription from https://platform.api.com. (I trust you know how to subscribe to things.) The way it works is you add a credit card and a small pre-payment ($10 is probably plenty) and OpenAI will deduct money from your balance every few messages you sent. Currently, the joi code is programmed to require about 3 cents per request. 
+
+You can get an ElevenLabs subscription from https://elevenlabs.io/pricing. The free account is okay for trying out joi but you will quickly run out of credits and will be forced to subscribe. Currently this code is very expensive on credits so you may wish to investigate other TTS APIs or just use Kokoro. The estimate is about 5 cents per request currently. 
 
 Once you have your subscriptions, you can create API keys for OpenAI at https://platform.openai.com/api-keys. Generate a code, give it a name (doesn't matter what it is) and once you have it SAVE IT SOMEWHERE so you don't forget it.
 
@@ -92,7 +90,7 @@ Just delete the joi folder and uninstall Git for Windows and Python for Windows,
 
 ### Contributing
 
-This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't give a fuck. If you could drop me a dollar at https://patreon.com/cacophony1979 it would go a long way to encouraging me to continue with projects like this. 
+This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell it, I don't care. If you could drop me a dollar at https://patreon.com/vexation1977 it would go a long way to encouraging me to continue with projects like this. 
 
 ### Licensing and Usage
 
@@ -100,7 +98,4 @@ Steal it, take credit for it, change it, improve it, sell it, it's yours.
 
 If you want to bullshit with me, visit https://discord.com/invite/gAugxKBHQY.
 
-If you want to encourage other coding projects like this, donate to https://www.patreon.com/cacophony1979
-
-
-
+If you want to encourage other coding projects like this, donate to https://www.patreon.com/vexation1977
