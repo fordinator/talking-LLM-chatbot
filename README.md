@@ -39,7 +39,10 @@ Instructions only available for Windows currently because that's my native platf
 - Install Git for Windows from https://git-scm.com/downloads/win and use all the default options. Then restart your computer.
 - Install Python for Windows from https://www.python.org/downloads/ and use all the default options. Then restart your computer.
 - Open a terminal to a convenient location, I recommend your downloads directory. On Windows 11, you can go there and right click inside, then select "Open with Terminal."
-- Type the following command: `pip install -r requirements.txt'
+- Type the following commands:
+        1. `git clone https://github.com/fordinator/talking-LLM-chatbot/`
+        2. `cd talking-LLM-chatbot`
+        3. `pip install -r requirements.txt` This one takes awhile and you will probably feel like Hackerman.
 
 ### Adding your API Keys
 
@@ -70,7 +73,7 @@ One final step. You need to add a voice to your ElevenLabs Library or you WILL R
 
 Optionally you can pick your own voice. Consult the comments of `joi.py` for details.
 
-That's it! You can run `joi.py` from a terminal now and listen to my default personality, caco-bot, insult you until you want to punch him.
+That's it! You can go back to your Terminal (described above) and type `python joi.py` listen to my default personality, caco-bot, insult you until you want to punch him.
 
 ### Customization
 
