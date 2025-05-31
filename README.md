@@ -102,6 +102,8 @@ This code is just a wrapper for OpenAI and ElevenLabs. Steal it, modify it, sell
 
 Steal it, take credit for it, change it, improve it, sell it, it's yours.
 
+If you like this stupid thing, pop on up to the upper right there and hit a "Star" on this repo so it'll move up on Google and others can find it.
+
 If you want to bullshit with me, visit https://discord.com/invite/gAugxKBHQY.
 
 If you want to encourage other coding projects like this, donate to https://www.patreon.com/vexation1977
